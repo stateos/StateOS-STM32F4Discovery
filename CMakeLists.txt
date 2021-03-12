@@ -3,10 +3,6 @@ cmake_minimum_required(VERSION 3.8)
 set(CMAKE_TOOLCHAIN_FILE "common/stateos/cmake/config-stm32f4discovery-gcc.cmake")
 set(CMAKE_BUILD_TYPE     "Release")
 
-option(__FLASH   "Build and flash" OFF)
-option(__QEMU    "Build and emulate with qemu software" OFF)
-option(__MONITOR "Build, flash and monitor with hardware by semihosting" OFF)
-
 project(test)
 
 find_package(startup REQUIRED)
